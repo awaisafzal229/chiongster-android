@@ -3,6 +3,12 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 interface Venue {
   name: string;
   type: string;
@@ -189,6 +195,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontWeight: '500',
     paddingRight: 4,
+     fontFamily: Fonts.regular,
   },
  newBadge: {
   position: 'absolute',
@@ -211,7 +218,7 @@ newBadgeText: {
   fontSize: 22,            // text-xl
   fontWeight: '800',       // font-extrabold
   marginRight: 4,          // gap between text & icon
-  fontFamily: 'Montserrat', // optional if installed
+   fontFamily: Fonts.regular, // optional if installed
   lineHeight: 28,
 },
 
@@ -234,6 +241,7 @@ newBadgeIcon: {
     fontSize: 17,
     fontWeight: '700',
     textTransform: 'capitalize',
+     fontFamily: Fonts.bold,
   },
   actionButtons: {
     flexDirection: 'row',
@@ -263,8 +271,9 @@ newBadgeIcon: {
   },
   priceLabel: {
     color: '#DEA41B',
-    fontSize: 15,
+    fontSize: 10,
     marginRight: 14,
+    fontFamily: Fonts.bold,
   },
   priceValue: {
     color: '#DEA41B',
@@ -290,6 +299,7 @@ infoIcon: {
   infoText: {
     color: '#B3B3B3',
     fontSize: 13,
+    fontFamily: Fonts.regular,
   },
   ratingContainer: {
     flexDirection: 'row',
@@ -298,11 +308,13 @@ infoIcon: {
   stars: {
     color: '#DEA41B',
     fontSize: 12,
+    fontFamily: Fonts.regular,
   },
   reviews: {
     color: '#B3B3B3',
     fontSize: 13,
     marginLeft: 6,
+     fontFamily: Fonts.regular,
   },
   tagsContainer: {
     flexDirection: 'row',
@@ -318,6 +330,7 @@ infoIcon: {
     color: '#B3B3B3',
     fontSize: 10,
     fontWeight: '500',
+     fontFamily: Fonts.regular,
   },
   bookButton: {
     paddingVertical: 8,
@@ -338,6 +351,7 @@ infoIcon: {
     fontSize: 13,
     fontWeight: '500',
     textTransform: 'uppercase',
+     fontFamily: Fonts.bold,
   },
   linksContainer: {
     flexDirection: 'row',
@@ -350,5 +364,6 @@ infoIcon: {
     fontWeight: '500',
     textDecorationLine: 'underline',
     textTransform: 'uppercase',
+     fontFamily: Fonts.regular,
   },
 });

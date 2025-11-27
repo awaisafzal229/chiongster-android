@@ -2,6 +2,12 @@ import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function Hero() {
   return (
     <View style={styles.container}>
@@ -42,6 +48,7 @@ const styles = StyleSheet.create({
     color: '#fff', // white text like in your Tailwind version
     textAlign: 'left', // align left
     marginBottom: 12,
+    fontFamily: Fonts.regular,
   },
 
   categoryButton: {
@@ -60,6 +67,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 17,
     fontWeight: '400',
+    fontFamily: Fonts.regular,
   },
 
  primaryButton: {
@@ -76,5 +84,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '700',
     textTransform: 'uppercase',
+    fontFamily: Fonts.regular,
   },
 });

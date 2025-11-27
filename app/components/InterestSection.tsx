@@ -1,6 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function InterestSection() {
   const interests = [
     { name: 'Darts', icon: '🎯' },
@@ -43,12 +49,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#DEA41B',
     marginBottom: 2,
+    fontFamily : Fonts.regular,
   },
   title: {
    fontSize: 22,
     fontWeight: '700',
     color: '#fff',
     textTransform: 'uppercase',
+    fontFamily : Fonts.regular,
   },
 
   // GRID LAYOUT
@@ -78,5 +86,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
     textAlign: 'center',
+    fontFamily : Fonts.regular,
   },
 });

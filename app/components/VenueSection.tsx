@@ -1,6 +1,12 @@
 import React from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function VenueSection() {
   const venues = [
     'Pub', 'Lounge & Bar', 'KTV Nightclub', 'Boys Club',
@@ -49,12 +55,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#DEA41B',
     marginBottom: 2,
+    fontFamily: Fonts.regular,
   },
   title: {
    fontSize: 22,
     fontWeight: '700',
     color: '#fff',
     textTransform: 'uppercase',
+    fontFamily: Fonts.regular,
   },
   scrollView: {
     paddingVertical: 10,
@@ -79,6 +87,7 @@ venueName: {
   fontWeight: '600',
   color: '#fff',
   textAlign: 'center',
+  fontFamily: Fonts.regular,
 },
 venueItem: {
   marginRight: 14,

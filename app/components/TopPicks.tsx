@@ -2,6 +2,12 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import VenueCard from './VenueCard';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function TopPicks() {
   const topPicks = [
     {
@@ -81,6 +87,7 @@ const styles = StyleSheet.create({
     color: '#DEA41B',
     textAlign: 'center',
     fontWeight: '500',
+    fontFamily: Fonts.regular,
   },
   title: {
     fontSize: 22,
@@ -88,6 +95,7 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     textTransform: 'uppercase',
+    fontFamily: Fonts.regular,
   },
   scrollView: {
     paddingVertical: 10,

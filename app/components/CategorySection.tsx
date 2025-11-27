@@ -1,6 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function CategorySection() {
   const firstRowCategories = [
     { name: 'Happy hour', image: require('../../assets/images/happy-hour.png') },
@@ -61,12 +67,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#DEA41B',
     marginBottom: 2,
+    fontFamily: Fonts.regular,
   },
   title: {
     fontSize: 22,
     fontWeight: '700',
     color: '#fff',
     textTransform: 'uppercase',
+    fontFamily: Fonts.regular,
   },
   row: {
     flexDirection: 'row',
@@ -90,6 +98,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
     textAlign: 'center',
+    fontFamily: Fonts.regular,
   },
   overlay: {
   position: 'absolute',

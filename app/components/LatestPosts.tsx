@@ -1,6 +1,13 @@
 import { Ionicons } from '@expo/vector-icons'; // or other icon family
 import React from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+
+const Fonts = {
+  regular: 'Futura-Book',
+  medium: 'Futura-Medium', 
+  bold: 'Futura-Bold',
+};
+
 export default function LatestPosts() {
   const posts = [
     {
@@ -70,12 +77,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#DEA41B',
     marginBottom: 2,
+    fontFamily: Fonts.regular,
   },
   title: {
    fontSize: 22,
     fontWeight: '700',
     color: '#fff',
     textTransform: 'uppercase',
+    fontFamily: Fonts.regular,
   },
   scrollView: {
     paddingVertical: 10,
@@ -102,12 +111,14 @@ const styles = StyleSheet.create({
   date: {
     fontSize: 10,
     color: '#B3B3B3',
+    fontFamily: Fonts.regular,
   },
   postTitle: {
     marginTop: 4,
     fontSize: 17,
     fontWeight: '700',
     color: '#fff',
+    fontFamily: Fonts.regular,
   },
 
   categories: {
@@ -124,6 +135,7 @@ const styles = StyleSheet.create({
   categoryText: {
     fontSize: 10,
     color: '#B3B3B3',
+    fontFamily: Fonts.regular,
   },
 
   description: {
@@ -131,13 +143,14 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: '#B3B3B3',
     lineHeight: 18,
+    fontFamily: Fonts.regular,
   },
 
   readMore: {
     marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 4
+    gap: 4,
   },
   readMoreText: {
     fontSize: 13,
@@ -145,5 +158,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textTransform: 'uppercase',
     textDecorationLine: 'underline',
+    fontFamily: Fonts.regular,
   },
 });

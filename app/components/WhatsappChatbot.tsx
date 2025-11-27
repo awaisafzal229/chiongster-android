@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     right: 20,
     width: 60,           // fixed width
     height: 60,          // same as width
-    backgroundColor: '#25D366', // WhatsApp green
+    backgroundColor: '#D7146B', // WhatsApp green
     borderRadius: 30,    // half of width/height for perfect circle
     justifyContent: 'center',
     alignItems: 'center',
